@@ -1,3 +1,47 @@
-/* hidden {
+/* Begin styling for header */
+
+header {
+    background-image: url('/src/images/travelBanner.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px ridge lightblue;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+}
+
+header h1 {
+    color: whitesmoke;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 85px;
+    width: 260px;
+}
+
+#placeButtonContainer {
+    margin-top: 165px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.interest {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
+    width: 30%;
+}
+
+
+
+/* Hiding place interests containers */
+
+.hidden {
     display: none;
-} */
+}

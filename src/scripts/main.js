@@ -3,6 +3,7 @@ import eventListeners from "./eventListeners.js"
 
 // adding buttons and interest containers to DOM
 addToDOM.addPlaceButtonsAndContainers()
+addToDOM.addInterestsToContainers()
 
 //  adding event listeners on place buttons
 eventListeners.placeButtonEventListener()

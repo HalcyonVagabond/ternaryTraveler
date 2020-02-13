@@ -1,5 +1,5 @@
 import dbAPI from "./dbAPI.js"
-import {creatHTML, createObjects} from "./componentCreator.js"
+import {createHTML, createObjects} from "./componentCreator.js"
 
 
 const addToDOM = {
@@ -11,13 +11,25 @@ const addToDOM = {
         dbAPI.getPlaces()
             .then(places => {
                 places.forEach(place => {
-                    buttonContainer.innerHTML += creatHTML.createPlaceButton(place)
-                    interestContainer.innerHTML += creatHTML.createPlaceInterestContainer(place)
+                    buttonContainer.innerHTML += createHTML.createPlaceButton(place);
+                    
+                    interestContainer.innerHTML += createHTML.createPlaceInterestContainer(place);
 
 
                 });
             })
 
+    },
+
+    addInterestsToContainers() {
+        
+        dbAPI.getInterests().then(interests => {
+            interests.forEach(interest => {
+                const interestContainer = document.getElementById(`interestContainer-${interest.placeId}`)
+
+                interestContainer.innerHTML += createHTML.createInterestComponent(interest)
+            })
+        })
     }
 
 }
