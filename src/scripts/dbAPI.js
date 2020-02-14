@@ -19,8 +19,12 @@ const dbAPI = {
         return fetch(`${baseURL}/interests/?placeId=${placeId}&_expand=place`).then(resp => resp.json())
     },
 
-    postInterest(){
-
+    postInterest(newInterestObj){
+        return fetch(`${baseURL}/interests`, {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(newInterestObj)
+        }).then(r=>r.json())
 
     },
 
@@ -38,7 +42,13 @@ const dbAPI = {
                         headers: {"Content-Type": "application/json"},
                         body: JSON.stringify(reviewObj)
                 }).then(resp => resp.json())
-     }
+     },
+
+     deleteInterest(interestId) {
+        return fetch(`${baseURL}/interests/${interestId}`, {
+            method: "DELETE"
+        }).then(resp => resp.json())
+    }
         
 
 }

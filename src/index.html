@@ -11,10 +11,40 @@
 <body>
     <header>
         <h1>Mira's Travel Blog</h1>
-        
+
     </header>
-    <section id="placeButtonContainer"></section>
-    
+    <article id="formContainer">
+        <h1>Create Interest Activity</h1>
+        <form name="theForm" action="">
+            <fieldset form="interestForm">
+                <input type="text" id="interestNameField" placeholder="Name of Interest">
+            </fieldset>
+            <fieldset form="interestForm">
+                <textarea name="interestDescription" id="interestDescription" placeholder="Description"></textarea>
+            </fieldset>
+            <fieldset form="interestForm">
+                <input type='number' class='addCost' id="addCost" step=0.01 placeholder='Cost'>
+            </fieldset>
+            <fieldset form="interestForm" class="hidden">
+                <textarea name="interestReview" id="interestReview" placeholder="" value=""></textarea>
+            </fieldset>
+            <fieldset>
+                <select name="selectPlace" id="selectPlace">
+                    <option value="" selected disabled hidden>Select Place</option>
+                    <option value=1>Italy</option>
+                    <option value=2>Switzerland</option>
+                    <option value=3>France</option>
+                </select>
+            </fieldset>
+        </form>
+        <button id="submitInterestButton" class="button" type="button" value="Submit Interest">Submit Interest</button>
+    </article>
+
+    <div id=placesDiv>
+        <h1>Places I'm Going</h1>
+        <section id="placeButtonContainer"></section>
+    </div>
+
     <section id="interestContainer"></section>
 
     <script type="module" src="/src/scripts/main.js"></script>
