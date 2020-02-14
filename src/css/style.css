@@ -31,11 +31,27 @@ header h1 {
     justify-content: space-evenly;
 }
 
+/* interests and interest container */
+
+.interestContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.interestHeader {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .interest {
     border: 1px solid black;
     padding: 10px;
     margin: 15px;
-    width: 30%;
+    width: 33%;
 }
 
 

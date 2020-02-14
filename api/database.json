@@ -1,45 +1,45 @@
 {
-    "places": [
-        {
-            "id": 1,
-            "name": "Italy",
-            "visa_required": false
-        },
-        {
-            "id": 2,
-            "name": "Switzerland",
-            "visa_required": true
-        },
-        {
-            "id": 3,
-            "name": "France",
-            "visa_required": false
-        }
-    ],
-    "interests": [
-        {
-            "id": 1,
-            "placeId": 1,
-            "name": "Local Market",
-            "description": "Local market where you can purchase local products and try the local food",
-            "cost": 0.00,
-            "review": ""
-        },
-        {
-            "id": 2,
-            "placeId": 2,
-            "name": "Ride gondola to top of Mt. Pilatus",
-            "description": "It's exactly what it sounds like. We get to ride a gondola to the top of Mt. Pilatus in the Swiss Alps! How Cool!",
-            "cost": 70.00,
-            "review": ""
-        },
-        { 
-            "id": 3, 
-            "placeId": 3, 
-            "name": "Eat Cheese and Drink Wine", 
-            "description": "Find a hole in the wall, and try some local cheese and wine.", 
-            "cost": 10.00, 
-            "review": "" 
-        }
-    ]
+  "places": [
+    {
+      "id": 1,
+      "name": "Italy",
+      "visa_required": false
+    },
+    {
+      "id": 2,
+      "name": "Switzerland",
+      "visa_required": true
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "visa_required": false
+    }
+  ],
+  "interests": [
+    {
+      "id": 1,
+      "placeId": 1,
+      "name": "Local Market",
+      "description": "Local market where you can purchase local products and try the local food",
+      "cost": "10",
+      "review": "I love markets!"
+    },
+    {
+      "id": 2,
+      "placeId": 2,
+      "name": "Ride gondola to top of Mt. Pilatus",
+      "description": "It's exactly what it sounds like. We get to ride a gondola to the top of Mt. Pilatus in the Swiss Alps! How Cool!",
+      "cost": "80",
+      "review": "I love mountains a lot! Is it working? I can't tell."
+    },
+    {
+      "id": 3,
+      "placeId": 3,
+      "name": "Eat Cheese and Drink Wine",
+      "description": "Find a hole in the wall, and try some local cheese and wine.",
+      "cost": "25",
+      "review": "I now have review wow\n"
+    }
+  ]
 }
