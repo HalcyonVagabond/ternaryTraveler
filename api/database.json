@@ -39,15 +39,15 @@
       "name": "Eat Cheese and Drink Wine",
       "description": "Find a hole in the wall, and try some local cheese and wine.",
       "cost": 30,
-      "review": "I now have review wow"
+      "review": "It was alright, but I prefer cheezwiz and franzia!"
     },
     {
       "id": 4,
       "placeId": 1,
       "name": "The Coliseum",
       "description": "Gotta go throw my sword in the wring, and try to be a gladiator!",
-      "cost": 0,
-      "review": "Make sure to take out an insurance policy . . . :/"
+      "cost": 80,
+      "review": "Make sure to take out an insurance policy . . . :/ at least medical expenses are cheap over here. It was only $80 for an MRI."
     },
     {
       "placeId": "1",
@@ -56,6 +56,22 @@
       "cost": 5,
       "review": "",
       "id": 5
+    },
+    {
+      "placeId": "2",
+      "name": "Get Free Money from Swiss Banks",
+      "description": "The Swiss just have so much money laying around . . . I wonder if they will give any to me!? Maybe if I ask nicely? I am sure they love American tourists.",
+      "cost": -100000,
+      "review": "",
+      "id": 6
+    },
+    {
+      "placeId": "3",
+      "name": "Find Ratatouille",
+      "description": "I absolutely loved the movie. I wonder if he is still cooking in the city? Surely a local would be happy to tell me where the famous rat chef is working out of!",
+      "cost": 0,
+      "review": "",
+      "id": 7
     }
   ]
 }
