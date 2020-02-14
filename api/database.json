@@ -22,15 +22,15 @@
       "placeId": 1,
       "name": "Local Market",
       "description": "Local market where you can purchase local products and try the local food",
-      "cost": "10",
-      "review": "I love markets!"
+      "cost": 10.5,
+      "review": ""
     },
     {
       "id": 2,
       "placeId": 2,
       "name": "Ride gondola to top of Mt. Pilatus",
       "description": "It's exactly what it sounds like. We get to ride a gondola to the top of Mt. Pilatus in the Swiss Alps! How Cool!",
-      "cost": "80",
+      "cost": 70,
       "review": "I love mountains a lot! Is it working? I can't tell."
     },
     {
@@ -38,8 +38,16 @@
       "placeId": 3,
       "name": "Eat Cheese and Drink Wine",
       "description": "Find a hole in the wall, and try some local cheese and wine.",
-      "cost": "25",
-      "review": "I now have review wow\n"
+      "cost": 30,
+      "review": "I now have review wow"
+    },
+    {
+      "id": 4,
+      "placeId": 1,
+      "name": "The Coliseum",
+      "description": "Gotta go throw my sword in the wring, and try to be a gladiator!",
+      "cost": 0,
+      "review": "Make sure to take out an insurance policy . . . :/"
     }
   ]
 }
