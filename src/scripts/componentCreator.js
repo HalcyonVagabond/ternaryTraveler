@@ -8,7 +8,7 @@ const createObjects = {
     },
 
     createCostObject(amount){
-        return { 'cost': amount }
+        return { 'cost': Number(amount) }
     },
     
     createReviewObject(review) {
