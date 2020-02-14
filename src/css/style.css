@@ -33,11 +33,19 @@ header h1 {
 
 /* interests and interest container */
 
-/* #interestContainer {
+.interestContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-} */
+    text-align: center;
+    justify-content: center;
+}
+
+.interestHeader {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 .interest {
     border: 1px solid black;

@@ -9,4 +9,6 @@ addToDOM.addInterestsToContainers()
 eventListeners.placeButtonEventListener()
 eventListeners.editCostEventListener()
 eventListeners.saveCostEventListener()
-
+eventListeners.createReviewEventListener()
+eventListeners.saveReview()
+eventListeners.editReviewEventListener()
