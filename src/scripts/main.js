@@ -7,3 +7,6 @@ addToDOM.addInterestsToContainers()
 
 //  adding event listeners on place buttons
 eventListeners.placeButtonEventListener()
+eventListeners.editCostEventListener()
+eventListeners.saveCostEventListener()
+

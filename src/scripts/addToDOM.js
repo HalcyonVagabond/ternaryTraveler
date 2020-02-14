@@ -22,14 +22,30 @@ const addToDOM = {
     },
 
     addInterestsToContainers() {
-        
+
         dbAPI.getInterests().then(interests => {
+            
             interests.forEach(interest => {
                 const interestContainer = document.getElementById(`interestContainer-${interest.placeId}`)
 
                 interestContainer.innerHTML += createHTML.createInterestComponent(interest)
             })
         })
+    },
+
+    addEditCostComponent(interestId, interestCost) {
+        const costContainer = document.getElementById(`cost-${interestId}`)
+
+        costContainer.innerHTML = createHTML.createEditCostComponent(interestId, interestCost)
+    },
+
+    addReviewComponent(interestId) {
+        console.log('not yet')
+    },
+
+    resetContainer(placeId) {
+        const interestContainer = document.getElementById(`interestContainer-${placeId}`)
+            interestContainer.innerHTML = ""
     }
 
 }
