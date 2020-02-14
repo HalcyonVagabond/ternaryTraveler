@@ -2,6 +2,17 @@ body {
     background-color: rgb(222,245,255);
 }
 
+button {
+    transition: 0.5s ease;
+    border-radius: 5px;
+    box-shadow: 1px 1px gray;
+}
+button:hover{
+
+    background-color: yellow;
+    padding: 3px 7px 3px;
+    transition: 0.5s ease;
+}
 /* Begin styling for header */
 
 header {
@@ -18,6 +29,7 @@ header {
 }
 
 header h1 {
+    border: 1px solid black;
     color: whitesmoke;
     background-color: red;
     border-radius: 10px;
@@ -28,14 +40,78 @@ header h1 {
     width: 260px;
 }
 
+/* Begin form styling */
+
+#formContainer {
+    margin-top: 170px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 50%;
+    max-width: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: 2px black;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px gray;
+}
+#formContainer h1 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 15px;
+    background-color: yellow;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: none;
+}
+/* place buttons */
+#placesDiv {
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px gray;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+#placesDiv h1{
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 1px 1px grey;
+    padding: 3px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #placeButtonContainer {
-    margin-top: 165px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 /* interests and interest container */
+
+#interestContainer {
+    margin-top: 30px;
+}
 
 .interestContainer {
     display: flex;
@@ -46,7 +122,8 @@ header h1 {
 }
 
 .interestHeader {
-    background-color: white;
+    box-shadow: 2px 2px 2px grey;
+    background-color: yellow;
     border-radius: 5px;
     padding: 10px;
     width: 45%;
@@ -56,14 +133,34 @@ header h1 {
 }
 
 .interest {
-    border: 1px solid black;
+    box-shadow: 2px 2px 2px grey;
     background-color: white;
     padding: 10px;
     margin: 15px;
     width: 33%;
 }
 
+.createReview-button {
+    margin-top: 20px;
+}
 
+.deleteButtonContainer {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    border-top: 1px dotted black;
+    margin-top: 20px;
+    width: 60%;
+}
+
+.deleteInterest-button {
+    transition: 0.5s ease;
+}
+.deleteInterest-button:hover {
+    background-color: red;
+    padding: 4px 8px 4px;
+    transition: 0.5s ease;
+}
 
 /* Hiding place interests containers */
 

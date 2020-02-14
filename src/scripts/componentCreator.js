@@ -3,8 +3,14 @@
 
 const createObjects = {
 
-    createInterestObject(){
-        console.log('not yet')
+    interestObjectFactory(name, description, cost, review, placeId) {
+        return {
+            "placeId": placeId,
+            "name": name,
+            "description": description,
+            "cost": Number(cost),
+            "review": review
+          }
     },
 
     createCostObject(amount){
@@ -41,10 +47,12 @@ const createHTML = {
 
                 <div class='costContainer' id='cost-${interest.id}'>Cost: $${interest.cost}</div>
 
-                <div class='reviewContainer' id='reviewContainer-${interest.id}'>
-                    
+                <div class='reviewContainer' id='reviewContainer-${interest.id}'>  
                     ${this.interestReviewOption(interest)}
+                </div>
 
+                <div class='deleteButtonContainer'>
+                    <button type='button' class='deleteInterest-button' id='deleteInterest-${interest.id}'>Delete Interest</button>
                 </div>
 
             </article>

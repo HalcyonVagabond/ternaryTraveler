@@ -22,7 +22,7 @@
       "placeId": 1,
       "name": "Local Market",
       "description": "Local market where you can purchase local products and try the local food",
-      "cost": 10.5,
+      "cost": 0,
       "review": ""
     },
     {
@@ -48,6 +48,14 @@
       "description": "Gotta go throw my sword in the wring, and try to be a gladiator!",
       "cost": 0,
       "review": "Make sure to take out an insurance policy . . . :/"
+    },
+    {
+      "placeId": "1",
+      "name": "Get Gelato",
+      "description": "Gelato is just like ice cream, but even better! I'm gonna go to a shop and get some nice Italian gelato.",
+      "cost": 5,
+      "review": "",
+      "id": 5
     }
   ]
 }
